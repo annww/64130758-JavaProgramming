@@ -12,11 +12,36 @@ public class BMIapp {
 
         System.out.println("------ BMI cua ban la bao nhieuuuuu --------");
         // Nhap chieu cao, can nang
-        System.out.print("Nhap chieu cao: ");
-        height = nhap.nextFloat();
-        System.out.print("Nhap can nang: ");
-        weight = nhap.nextFloat();
-
+        while(true){
+            System.out.print("Nhap chieu cao: ");
+            try {
+                height = nhap.nextFloat();
+                if(height > 1.0 && height < 2.0){
+                    break;
+                }
+                else{
+                    System.out.println("Chieu cao phai tu 1.0 den 2.0");
+                }
+            } catch (Exception e) {
+                System.out.print("Hay nhap vao mot so: ");
+                nhap.next();
+            }
+        }
+        while(true){
+            System.out.print("Nhap can nang: ");
+            try{
+                weight = nhap.nextFloat();
+                if(weight > 0 && weight < 200){
+                    break;
+                }
+                else{
+                    System.out.println("Can nang phai tu 0kg den 200kg");
+                }
+            } catch (Exception e){
+                System.out.println("Hay nhap vao mot so: ");
+                nhap.next();
+            }
+        }
         // Tinh chi so
         BMI = weight/ (height*height);
 

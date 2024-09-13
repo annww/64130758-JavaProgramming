@@ -8,7 +8,7 @@ public class Bai3_OddEvenApp {
         int a;
         Scanner nhap = new Scanner(System.in); // Nhap chan le
         //Nhap 1 so
-        System.out.println("Nhap a: ");
+        System.out.print("Nhap a: ");
         a = nhap.nextInt();
 
         // Kiem tra dieu kien chan le

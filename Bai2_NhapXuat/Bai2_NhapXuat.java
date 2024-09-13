@@ -1,4 +1,4 @@
-package Bai2;
+package Bai2_NhapXuat;
 
 import java.util.Scanner;
 

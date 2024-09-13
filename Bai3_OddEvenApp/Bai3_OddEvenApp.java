@@ -13,9 +13,9 @@ public class Bai3_OddEvenApp {
 
         // Kiem tra dieu kien chan le
         if(a % 2 == 0){
-            System.out.println("May la so chan!!!!");
+            System.out.println(a + " la so chan!!!!");
         } else{
-            System.out.println("May la so le!!!");
+            System.out.println(a + " la so le!!!");
         }   
     }
 }

@@ -16,7 +16,7 @@ public class BMIapp {
             System.out.print("Nhap chieu cao: ");
             try {
                 height = nhap.nextFloat();
-                if(height > 1.0 && height < 2.2){
+                if(height >= 1.0f && height <= 2.2f){
                     break;
                 }
                 else{

@@ -1,4 +1,4 @@
-package Bai6_Citizen;
+package Bai6_OOPCitizen;
 
 public class MainApp {
     public static void main(String[] args) {
@@ -7,15 +7,13 @@ public class MainApp {
         c1.setName("Mina");
         c1.setGender("male");
         c1.setNation("UK");
-        c1.setYear("2004");
-        System.out.println(c1.toString());
+        c1.setYear(Short.parseShort("2004"));
 
         OOPCitizen c2= new OOPCitizen(null, null, null, null, null);
         c2.setId("01");
         c2.setName("Hoa");
         c2.setGender("female");
         c2.setNation("Japan");
-        c2.setYear("2000");
-        System.out.println(c2.toString());
-    } 
+        c2.setYear(Short.parseShort("2000"));
+    }
 }

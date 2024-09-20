@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999cd66e-bf7b-4be6-94f1-4b04991c5e01" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Bai4_BMIapp/BMIapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bai4_BMIapp/BMIapp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai6_Citizen/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bai6_Citizen/MainApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/samh5/Documents/GitHub/64130758-JavaProgramming&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/java/JavaProgramming&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

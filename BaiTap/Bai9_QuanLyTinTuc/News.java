@@ -22,7 +22,6 @@ class News implements INews{
         AverageRate = averageRate;
     }
 
-    
 
     public int getID() {
         return ID;

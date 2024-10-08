@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sum.Controller">
    <children>
       <Text layoutX="249.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operation" textAlignment="CENTER">
          <font>
@@ -18,7 +18,7 @@
       <Text layoutX="186.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" />
       <Text layoutX="186.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B" />
       <Text layoutX="178.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" />
-      <Button fx:id="btnSum" layoutX="274.0" layoutY="269.0" mnemonicParsing="false" text="Sum" />
+      <Button fx:id="btnSum" layoutX="274.0" layoutY="269.0" mnemonicParsing="false" onAction="#Sum" text="Sum" />
       <TextField fx:id="txtA" layoutX="225.0" layoutY="99.0" />
       <TextField fx:id="txtB" layoutX="225.0" layoutY="149.0" />
       <Label fx:id="lblResult" layoutX="225.0" layoutY="212.0" prefHeight="18.0" prefWidth="150.0" text="..." />

@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999cd66e-bf7b-4be6-94f1-4b04991c5e01" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Bai5_Printdayinweek" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViDu/App1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViDu/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViDu/num.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/BT/QLSV_64130758/src/main/java/com/example/qlsv_64130758/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SinhVien_64130758/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SinhVien_64130758/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SinhVien_64130758/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SinhVien_64130758/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SinhVien_64130758/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SinhVien_64130758/src/main/resources/com/example/sinhvien_64130758/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/5- Java/JavaProgramming"
+    "last_opened_file_path": "D:/5- Java/JavaProgramming/BT"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

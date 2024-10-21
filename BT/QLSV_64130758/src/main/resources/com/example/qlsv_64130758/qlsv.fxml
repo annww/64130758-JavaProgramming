@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qlsv_64130758.HelloController">
+   <children>
+      <Text layoutX="43.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSSV" />
+      <Text layoutX="43.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên " />
+      <Text layoutX="43.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Năm sinh " />
+      <TextArea id="textresult" fx:id="textresult" layoutX="362.0" layoutY="72.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField id="txtmssv" fx:id="txtmssv" layoutX="121.0" layoutY="108.0" />
+      <TextField id="txtname" fx:id="txtname" layoutX="122.0" layoutY="159.0" />
+      <TextField id="txtdob" fx:id="txtdob" layoutX="123.0" layoutY="223.0" />
+      <Button id="btnadd" layoutX="171.0" layoutY="307.0" mnemonicParsing="false" onAction="#addSV" text="Add" />
+      <Button fx:id="btnReload" layoutX="381.0" layoutY="307.0" mnemonicParsing="false" text="Reload" />
+      <Button fx:id="btnSave" layoutX="486.0" layoutY="307.0" mnemonicParsing="false" onAction="#saveSV" text="Save" />
+   </children>
+</AnchorPane>

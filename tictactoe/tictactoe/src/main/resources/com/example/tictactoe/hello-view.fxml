@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.HelloController">
+   <children>
+      <FlowPane layoutX="140.0" layoutY="112.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="button2" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="button3" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="button4" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="button5" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="button6" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="button7" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="button8" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="button9" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+         </children>
+      </FlowPane>
+      <Text layoutX="217.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cảo caro">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Text fx:id="winnerText" layoutX="170.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="237.9443359375" />
+      <Button fx:id="resetButton" layoutX="263.0" layoutY="445.0" mnemonicParsing="false" onAction="#restartGame" text="Restart" />
+
+   </children>
+</AnchorPane>

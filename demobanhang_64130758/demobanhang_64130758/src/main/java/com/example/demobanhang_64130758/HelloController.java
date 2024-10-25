@@ -2,6 +2,7 @@ package com.example.demobanhang_64130758;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -26,8 +27,6 @@ public class HelloController {
     private TableColumn<Product, String> columnGiaSP;
     @FXML
     private TableColumn<Product, String> columnMoTa;
-    @FXML
-    private Button btnAdd;
 
     private ObservableList<Product> productList = FXCollections.observableArrayList();
 
@@ -41,13 +40,6 @@ public class HelloController {
 
         // Gọi phương thức load dữ liệu từ MySQL
         loadProductsFromDatabase();
-        btnAdd.setOnAction(event -> {
-            try {
-                switchToNewScene();
-            } catch (IOException e) {
-                e.printStackTrace(); // In ra lỗi nếu có
-            }
-        });
     }
 
     private void loadProductsFromDatabase() throws SQLException, ClassNotFoundException {
@@ -78,19 +70,22 @@ public class HelloController {
         stmt.close();
         conn.close();
     }
+
     @FXML
-    private void switchToNewScene() throws IOException {
-        // Tải file FXML mới
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("addproduct.fxml")); // Đường dẫn tới file FXML mới
-        AnchorPane newSceneRoot = loader.load();
-
-        // Tạo một scene mới
-        Scene newScene = new Scene(newSceneRoot);
-
-        // Lấy stage từ tableView thay vì btnAdd
-        Stage stage = (Stage) tableView.getScene().getWindow(); // Chuyển từ btnAdd sang tableView
-        stage.setScene(newScene);
-        stage.show();
+    private Button btnAdd;
+    @FXML
+    private void handleButtonClick() {
+        try {
+            // Tải Scene2.fxml
+            Parent root = FXMLLoader.load(getClass().getResource("addproduct.fxml"));
+            // Lấy Stage hiện tại và chuyển đổi cảnh
+            Stage stage = (Stage) btnAdd.getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

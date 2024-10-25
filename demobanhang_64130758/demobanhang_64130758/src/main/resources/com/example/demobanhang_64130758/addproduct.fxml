@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:controller="com.example.demobanhang_64130758.HelloController"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/8">
+
+    <TableView fx:id="tableView">
+        <!-- Định nghĩa các cột -->
+    </TableView>
+
+    <!-- Form nhập liệu cho sản phẩm -->
+    <TextField fx:id="productNameField" promptText="Tên sản phẩm"/>
+    <TextField fx:id="productPriceField" promptText="Giá sản phẩm"/>
+    <TextField fx:id="productDescriptionField" promptText="Mô tả sản phẩm"/>
+
+    <!-- Button để thêm sản phẩm -->
+    <Button text="Thêm sản phẩm" onAction="#handleAddProduct" />
+<!--    -->
+</VBox>

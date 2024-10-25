@@ -4,6 +4,7 @@ module com.example.demobanhang_64130758 {
 
     requires org.kordamp.bootstrapfx.core;
   requires java.sql;
+  requires java.desktop;
 
   opens com.example.demobanhang_64130758 to javafx.fxml;
     exports com.example.demobanhang_64130758;

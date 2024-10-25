@@ -1,12 +1,18 @@
 package com.example.demobanhang_64130758;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import javafx.scene.control.Button;
 
+import java.io.IOException;
 import java.sql.*;
 
 public class HelloController {
@@ -20,6 +26,8 @@ public class HelloController {
     private TableColumn<Product, String> columnGiaSP;
     @FXML
     private TableColumn<Product, String> columnMoTa;
+    @FXML
+    private Button btnAdd;
 
     private ObservableList<Product> productList = FXCollections.observableArrayList();
 
@@ -33,13 +41,20 @@ public class HelloController {
 
         // Gọi phương thức load dữ liệu từ MySQL
         loadProductsFromDatabase();
+        btnAdd.setOnAction(event -> {
+            try {
+                switchToNewScene();
+            } catch (IOException e) {
+                e.printStackTrace(); // In ra lỗi nếu có
+            }
+        });
     }
 
     private void loadProductsFromDatabase() throws SQLException, ClassNotFoundException {
         // Kết nối tới MySQL
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demobanhang", "root", "");
-        
+
         // Câu lệnh SQL để lấy dữ liệu
         String sqlSelect = "SELECT * FROM sanpham";
         Statement stmt = conn.createStatement();
@@ -63,4 +78,19 @@ public class HelloController {
         stmt.close();
         conn.close();
     }
+    @FXML
+    private void switchToNewScene() throws IOException {
+        // Tải file FXML mới
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("addproduct.fxml")); // Đường dẫn tới file FXML mới
+        AnchorPane newSceneRoot = loader.load();
+
+        // Tạo một scene mới
+        Scene newScene = new Scene(newSceneRoot);
+
+        // Lấy stage từ tableView thay vì btnAdd
+        Stage stage = (Stage) tableView.getScene().getWindow(); // Chuyển từ btnAdd sang tableView
+        stage.setScene(newScene);
+        stage.show();
+    }
+
 }

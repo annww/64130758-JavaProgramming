@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,6 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
 
+import java.awt.*;
 import java.io.IOException;
 import java.sql.*;
 
@@ -86,6 +88,31 @@ public class HelloController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    private TextField txtTenSP;
+
+    @FXML
+    private javafx.scene.control.TextField txtGiaSP;
+
+    @FXML
+    private javafx.scene.control.TextArea txtMoTa;
+
+    private AddProductController databaseManager = new AddProductController();
+
+    @FXML
+    private void handleAddProduct() throws SQLException, ClassNotFoundException {
+        String tenSP = txtTenSP.getText();
+        String giaSP = txtGiaSP.getText();
+        String moTa = txtMoTa.getText();
+
+        databaseManager.addProduct(tenSP, giaSP, moTa);
+
+        // Xóa các trường sau khi thêm
+        txtTenSP.clear();
+        txtGiaSP.clear();
+        txtMoTa.clear();
     }
 
 }

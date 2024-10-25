@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.demobanhang_64130758.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
-
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane prefHeight="473.0" prefWidth="502.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.demobanhang_64130758.HelloController">
+   <Text layoutX="213.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi tiết sản phẩm">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Text>
+    <TableView fx:id="tableView" layoutY="66.0" prefHeight="400.0" prefWidth="573.0">
+        <columns>
+            <TableColumn fx:id="columnID" prefWidth="53.60000765323639" text="ID" />
+            <TableColumn fx:id="columnTenSP" prefWidth="185.59996795654297" text="Tên Sản Phẩm" />
+            <TableColumn fx:id="columnGiaSP" prefWidth="145.5999755859375" text="Giá Sản Phẩm" />
+            <TableColumn fx:id="columnMoTa" prefWidth="189.59994506835938" text="Mô Tả" />
+        </columns>
+    </TableView>
+</AnchorPane>

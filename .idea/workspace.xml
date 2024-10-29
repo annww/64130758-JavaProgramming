@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999cd66e-bf7b-4be6-94f1-4b04991c5e01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaApp_Login/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaApp_Login/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaApp_Login/src/main/java/com/example/javaapp_login/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaApp_Login/src/main/resources/com/example/javaapp_login/mainview.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/src/main/java/com/example/javaapp/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/src/main/java/com/example/javaapp/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaApp/src/main/resources/com/example/javaapp/JavaApp.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demobanhang_64130758/demobanhang_64130758/src/main/java/com/example/demobanhang_64130758/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demobanhang_64130758/demobanhang_64130758/src/main/java/com/example/demobanhang_64130758/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaApp_Login/src/main/java/com/example/javaapp_login/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaApp_Login/src/main/java/com/example/javaapp_login/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaApp_Login/src/main/java/com/example/javaapp_login/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaApp_Login/src/main/java/com/example/javaapp_login/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaApp_Login/src/main/resources/com/example/javaapp_login/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaApp_Login/src/main/resources/com/example/javaapp_login/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

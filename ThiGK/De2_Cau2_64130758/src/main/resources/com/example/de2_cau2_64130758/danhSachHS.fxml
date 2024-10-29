@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="477.0" prefWidth="757.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.de2_cau2_64130758.danhSachHSController">
+    <TableView fx:id="studentTable" layoutX="36.0" layoutY="205.0" prefHeight="236.0" prefWidth="683.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="264.800012588501" text="Họ tên" />
+            <TableColumn fx:id="ageColumn" prefWidth="207.20001220703125" text="Tuổi" />
+            <TableColumn fx:id="classColumn" prefWidth="211.20004272460938" text="Lớp" />
+        </columns>
+    </TableView>
+    <TextField fx:id="nameField" layoutX="135.0" layoutY="105.0" promptText="Nhập tên" />
+    <TextField fx:id="ageField" layoutX="305.0" layoutY="105.0" prefHeight="26.0" prefWidth="150.0" promptText="Nhập tuổi" />
+    <TextField fx:id="classField" layoutX="469.0" layoutY="105.0" promptText="Nhập lớp" />
+    <Button fx:id="addButton" layoutX="289.0" layoutY="153.0" onAction="#addStudent" text="Thêm" textFill="#dc52a3" />
+    <Button fx:id="editButton" layoutX="354.0" layoutY="153.0" onAction="#editStudent" prefHeight="26.0" prefWidth="46.0" text="Sửa" textFill="#dc52a3" />
+    <Button fx:id="deleteButton" layoutX="424.0" layoutY="153.0" onAction="#deleteStudent" prefHeight="26.0" prefWidth="46.0" text="Xóa" textFill="#dc52a3" />
+   <Text fill="#d43535" layoutX="230.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DANH SÁCH SINH VIÊN">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Text>
+</AnchorPane>

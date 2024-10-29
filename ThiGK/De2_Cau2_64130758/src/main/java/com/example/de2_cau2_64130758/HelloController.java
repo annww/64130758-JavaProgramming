@@ -1,4 +1,4 @@
-package com.example.javaapp_login;
+package com.example.de2_cau2_64130758;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -7,13 +7,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
+
+import java.io.IOException;
 import java.sql.*;
 
 public class HelloController {
     @FXML
-    private TextField username;             // Ô nhập tên đăng nhập
+    private TextField username;
     @FXML
-    private PasswordField password;       // Ô nhập mật khẩu
+    private PasswordField password;
     @FXML
     private Button btnlogin, btnreset;
 
@@ -41,13 +43,20 @@ public class HelloController {
 
         boolean loggedIn = validateLogin(txtName, txtPass);
         if (loggedIn) {
-            // Hiển thị thông báo đăng nhập thành công
             showAlert("Đăng nhập thành công!", "Chào mừng bạn đến với ứng dụng.");
+
+            // Chuyển sang màn hình 2
+            try {
+                MainApp.showMainAppScene(); // Hiển thị màn hình 2
+            } catch (IOException e) {
+                showAlert("Lỗi", "Không thể chuyển sang màn hình danh sách học sinh.");
+                e.printStackTrace();
+            }
         } else {
-            // Hiển thị thông báo đăng nhập thất bại
             showAlert("Đăng nhập thất bại!", "Tên đăng nhập hoặc mật khẩu không chính xác.");
         }
     }
+
 
     @FXML
     // Kết nối tới cơ sở dữ liệu MySQL
@@ -111,5 +120,6 @@ public class HelloController {
         username.clear();
         password.clear();
     }
+
 
 }

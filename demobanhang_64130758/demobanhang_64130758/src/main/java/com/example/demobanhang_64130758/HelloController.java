@@ -75,12 +75,12 @@ public class HelloController {
 
     @FXML
     private Button btnAdd;
+
     @FXML
     private void handleButtonClick() {
         try {
-            // Tải Scene2.fxml
             Parent root = FXMLLoader.load(getClass().getResource("addproduct.fxml"));
-            // Lấy Stage hiện tại và chuyển đổi cảnh
+
             Stage stage = (Stage) btnAdd.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -115,4 +115,38 @@ public class HelloController {
         txtMoTa.clear();
     }
 
+    @FXML
+    private java.awt.Button addSP;
+
+    @FXML
+    public void addProducttoDB(String tenSP, String giaSP, String moTa) throws ClassNotFoundException, SQLException {
+        String sql = "INSERT INTO sanpham (tenSP, giaSP, moTa) VALUE (?,?,?)";
+
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demobanhang", "root", "");
+            PreparedStatement statement = conn.prepareStatement(sql)){
+            statement.setString(1, tenSP);
+            statement.setString(2,giaSP);
+            statement.setString(3,moTa);
+
+            int rowsInserted = statement.executeUpdate();
+            if(rowsInserted > 0){
+                System.out.println("Add succesfully!");
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void addProduct() throws SQLException, ClassNotFoundException {
+        String tenSP = txtTenSP.getText();
+        String giaSP = txtGiaSP.getText();
+        String moTa = txtMoTa.getText();
+
+        addProducttoDB(tenSP,giaSP,moTa);
+
+        txtTenSP.clear();
+        txtGiaSP.clear();
+        txtMoTa.clear();
+    }
 }

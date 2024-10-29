@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demobanhang_64130758.AddProductController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demobanhang_64130758.HelloController">
    <children>
       <Text layoutX="198.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm thông tin sản ">
          <font>
@@ -20,6 +20,6 @@
       <TextArea fx:id="txtMoTa" layoutX="202.0" layoutY="251.0" prefHeight="83.0" prefWidth="320.0" />
       <TextField fx:id="txtGiaSP" layoutX="202.0" layoutY="178.0" prefHeight="26.0" prefWidth="320.0" />
       <TextField fx:id="txtTenSP" layoutX="202.0" layoutY="109.0" prefHeight="26.0" prefWidth="320.0" />
-      <Button fx:id="addSP" layoutX="273.0" layoutY="372.0" mnemonicParsing="false" onAction="#addProduct" text="Thêm" />
+      <Button fx:id="btnAdd" layoutX="273.0" layoutY="372.0" mnemonicParsing="false" onAction="#addProduct" text="Thêm"/>
    </children>
 </AnchorPane>

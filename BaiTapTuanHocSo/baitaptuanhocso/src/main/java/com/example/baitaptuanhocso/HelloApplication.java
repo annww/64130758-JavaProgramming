@@ -63,6 +63,26 @@ public class HelloApplication extends Application {
       stage.setScene(scene);
       stage.show();
 
+      // Ve chan trai
+      gc.setStroke(Color.BLACK);
+      gc.strokeOval(170, 220, 20, 20);
+      gc.fillOval(170,220,20,20);
+
+      // Ve chan phai
+      gc.setStroke(Color.BLACK);
+      gc.strokeOval(210, 220, 20, 20);
+      gc.fillOval(210, 220, 20, 20);
+
+      // Ve duong cong ben trong chan trai
+      gc.setStroke(Color.RED);
+      gc.strokeArc(172, 230, 5, 10, 90, 180, javafx.scene.shape.ArcType.OPEN);
+      gc.strokeArc(182, 230, 5, 10, 90, -180, javafx.scene.shape.ArcType.OPEN);
+
+      // Ve duong cong ben trong chan phai
+      gc.setStroke(Color.RED);
+      gc.strokeArc(212, 230, 5, 10, 90, 180, javafx.scene.shape.ArcType.OPEN);
+      gc.strokeArc(222, 230, 5, 10, 90, -180, javafx.scene.shape.ArcType.OPEN);
+
   }
 
   public static void main(String[] args) {

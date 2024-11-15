@@ -48,6 +48,14 @@ public class HelloApplication extends Application {
       gc.strokePolygon(X2,Y2,3);
       gc.fillPolygon(X2,Y2,3);
 
+      // Ve cai mom mau do
+      gc.setLineWidth(2);
+      gc.setStroke(Color.RED);
+      double[] X_red = {185,215,200};
+      double[] Y_red = {155,155,165};
+      gc.strokePolygon(X_red,Y_red,3);
+      gc.fillPolygon(X_red,Y_red,3);
+
       // Them vao scene
       Group root = new Group(canvas);
       Scene scene = new Scene(root, 400, 400);

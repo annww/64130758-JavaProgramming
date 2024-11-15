@@ -22,15 +22,31 @@ public class HelloApplication extends Application {
 
       // Ve hinh tron
       gc.setStroke(Color.BLACK);
-      gc.strokeOval(150, 150, 100, 100);
+      gc.strokeOval(150, 130, 100, 100);
 
-      // Ve hinh tam giac
+      // Ve hinh tam giac lon
       gc.setLineWidth(2);
       gc.setFill(Color.WHITE);
       double[] X_position = {100,200,300};
-      double[] Y_position = {160,80,160};
+      double[] Y_position = {180,100,180};
       gc.strokePolygon(X_position,Y_position,3);
       gc.fillPolygon(X_position,Y_position,3);
+
+      // Ve tam giac nho 1
+      gc.setLineWidth(2);
+      gc.setFill(Color.WHITE);
+      double[] X1 = {175,190,175};
+      double[] Y1 = {95,107,120};
+      gc.strokePolygon(X1,Y1,3);
+      gc.fillPolygon(X1,Y1,3);
+
+      // Ve tam giac nho 2
+      gc.setLineWidth(2);
+      gc.setFill(Color.WHITE);
+      double[] X2 = {210,225,225};
+      double[] Y2 = {107,95,120};
+      gc.strokePolygon(X2,Y2,3);
+      gc.fillPolygon(X2,Y2,3);
 
       // Them vao scene
       Group root = new Group(canvas);

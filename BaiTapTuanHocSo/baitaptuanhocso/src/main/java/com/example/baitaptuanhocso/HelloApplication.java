@@ -19,6 +19,18 @@ public class HelloApplication extends Application {
       // Tao canvas
       Canvas canvas = new Canvas(400, 400);
       GraphicsContext gc = canvas.getGraphicsContext2D();
+
+      // Ve hinh tron
+      gc.setStroke(Color.BLACK);
+      gc.strokeOval(150, 150, 100, 100);
+
+      // Them vao scene
+      Group root = new Group(canvas);
+      Scene scene = new Scene(root, 400, 400);
+      stage.setTitle("Bai tap ve bang JavaFX");
+      stage.setScene(scene);
+      stage.show();
+
   }
 
   public static void main(String[] args) {

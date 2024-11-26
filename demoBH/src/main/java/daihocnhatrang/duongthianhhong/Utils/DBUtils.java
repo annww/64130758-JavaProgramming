@@ -7,23 +7,41 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBUtils {
-  @FXML
-  private Connection conn;
+  public DBUtils() {
+  }
 
-  @FXML
-  // Kết nối tới cơ sở dữ liệu MySQL
+  public static Connection openConnection() {
+    Connection con = null;
 
-  private static final String URL = "jdbc:mysql://localhost:3306/demoBH";
-  private static final String USER = "root";
-  private static final String PASSWORD = "";
-
-  public static Connection getConnection() {
-    Connection conn = null;
     try {
-      conn = DriverManager.getConnection(URL, USER, PASSWORD);
-    } catch (Exception e) {
+      Class.forName("com.mysql.cj.jdbc.Driver");
+      String connectionURL = "jdbc:mysql://localhost:3306/demobh";
+      con = DriverManager.getConnection(connectionURL, "root", "");
+      System.out.println("Connection successful!");
+    } catch (ClassNotFoundException var2) {
+      ClassNotFoundException e = var2;
+      System.out.println("MySQL Driver not found!");
+      e.printStackTrace();
+    } catch (SQLException var3) {
+      SQLException e = var3;
+      System.out.println("Connection failed!");
       e.printStackTrace();
     }
-    return conn;
+
+    return con;
+  }
+
+  public static void closeConnection(Connection con) {
+    if (con != null) {
+      try {
+        con.close();
+        System.out.println("Connection closed!");
+      } catch (SQLException var2) {
+        SQLException e = var2;
+        System.out.println("Failed to close connection!");
+        e.printStackTrace();
+      }
+    }
+
   }
 }

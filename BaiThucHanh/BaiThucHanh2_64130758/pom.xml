@@ -65,7 +65,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                daihocnhatrang.duongthianhhong.baithuchanh2_64130758/daihocnhatrang.duongthianhhong.baithuchanh2_64130758.HelloApplication
+                                daihocnhatrang.duongthianhhong.baithuchanh2_64130758/th.duongthianhhong.BasicGUI_BMI.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

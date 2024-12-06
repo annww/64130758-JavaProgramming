@@ -1,10 +1,14 @@
 package th.duongthianhhong.BasicGUI_BMI;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 
-public class BMIController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class BMIController implements Initializable {
 
   @FXML
   private TextField txtHeight;
@@ -52,5 +56,9 @@ public class BMIController {
     } catch (NumberFormatException e) {
       result.setText("Vui lòng nhập dữ liệu hợp lệ!");
     }
+  }
+  @Override
+  public void initialize(URL location, ResourceBundle resources) {
+    result.setEditable(false);
   }
 }

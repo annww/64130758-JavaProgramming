@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>daihocnhatrang.duongthianhhong</groupId>
-    <artifactId>BaiThucHanh1_641308758</artifactId>
+    <artifactId>BaiThucHanh2_64130758</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>BaiThucHanh1_641308758</name>
+    <name>BaiThucHanh2_64130758</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,7 +65,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                daihocnhatrang.duongthianhhong.baithuchanh1_641308758/th.duongthianhhong.baithuchanh1_641308758.HelloApplication
+                                daihocnhatrang.duongthianhhong.baithuchanh2_64130758/daihocnhatrang.duongthianhhong.baithuchanh2_64130758.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

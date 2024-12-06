@@ -1,4 +1,4 @@
-package daihocnhatrang.duongthianhhong.baithuchanh1_641308758;
+package th.duongthianhhong.baithuchanh1_641308758;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

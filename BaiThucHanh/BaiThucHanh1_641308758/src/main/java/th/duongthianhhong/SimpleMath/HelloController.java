@@ -2,10 +2,14 @@ package th.duongthianhhong.SimpleMath;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
-public class HelloController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class HelloController implements Initializable {
 
   @FXML
   private TextField txta, txtb, result;
@@ -45,4 +49,10 @@ public class HelloController {
     rbnhan.setSelected(false);
     rbchia.setSelected(false);
   }
+
+  @Override
+  public void initialize(URL location, ResourceBundle resources) {
+    result.setEditable(false);
+  }
+
 }

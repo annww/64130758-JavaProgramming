@@ -65,7 +65,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                th.duongthianhhong.baithuchanh3_flashquizgui/th.duongthianhhong.baithuchanh3_flashquizgui.HelloApplication
+                                th.duongthianhhong.baithuchanh3_flashquizgui/th.duongthianhhong.baithuchanh3_flashquizgui.QuizApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

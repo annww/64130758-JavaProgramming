@@ -12,7 +12,7 @@ public class QuizApplication extends Application {
   public void start(Stage stage) throws IOException {
     FXMLLoader fxmlLoader = new FXMLLoader(QuizApplication.class.getResource("FlashQuizGUI.fxml"));
     Scene scene = new Scene(fxmlLoader.load());
-    stage.setTitle("Hello!");
+    stage.setTitle("Quiz GUI!");
     stage.setScene(scene);
     stage.show();
   }

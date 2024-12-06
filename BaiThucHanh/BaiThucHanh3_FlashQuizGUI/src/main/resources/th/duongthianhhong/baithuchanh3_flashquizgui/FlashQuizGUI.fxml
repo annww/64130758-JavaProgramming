@@ -1,83 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="971.0" style="-fx-background-color: #EFCDE9;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
-    <children>
-        <VBox prefHeight="570.0" prefWidth="314.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;">
-            <children>
-                <Text fill="#c15a5a" strokeType="OUTSIDE" strokeWidth="0.0" text="FLASH QZ" textAlignment="CENTER" wrappingWidth="314.0">
-                    <VBox.margin>
-                        <Insets bottom="60.0" top="60.0" />
-                    </VBox.margin>
-                    <font>
-                        <Font name="System Bold" size="30.0" />
-                    </font>
-                </Text>
-
-                <ScrollPane prefHeight="410.0" prefWidth="314.0">
-                    <content>
-                        <VBox alignment="CENTER" prefHeight="537.0" prefWidth="296.0" spacing="15.0">
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 10">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 9">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 8">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 7">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 6">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 5">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 4">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 3">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 2">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-font-size: 18px; -fx-background-color: #88C0E8; -fx-text-fill: #fff; -fx-border-radius: 5px;" text="Câu 1">
-                                <font>
-                                    <Font size="20.0" />
-                                </font>
-                            </Button>
-                        </VBox>
-                    </content>
-                </ScrollPane>
-            </children>
+<BorderPane prefHeight="732.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="th.duongthianhhong.baithuchanh3_flashquizgui.FlashQuizGUI">
+    <!-- Bảng điều hướng bên trái -->
+    <left>
+        <VBox prefHeight="730.0" prefWidth="196.0" spacing="10" style="-fx-background-color: #88C0E8; -fx-padding: 10; -fx-border-radius: 20;">
+            <Label prefHeight="27.0" prefWidth="180.0" style="-fx-text-fill: white;" text="FLASH QZ" textAlignment="CENTER" textFill="#d43838">
+            <font>
+               <Font size="18.0" />
+            </font></Label>
+            <Button fx:id="btnq10" prefHeight="31.0" prefWidth="194.0" text="Câu 10" />
+            <Button fx:id="btnq9" prefHeight="31.0" prefWidth="209.0" text="Câu 9" />
+            <Button fx:id="btnq8" prefHeight="31.0" prefWidth="197.0" text="Câu 8" />
+            <Button fx:id="btnq7" prefHeight="31.0" prefWidth="186.0" text="Câu 7" />
+            <Button fx:id="btnq6" prefHeight="31.0" prefWidth="222.0" text="Câu 6" />
+            <Button fx:id="btnq5" prefHeight="31.0" prefWidth="203.0" text="Câu 5" />
+            <Button fx:id="btnq4" prefHeight="31.0" prefWidth="212.0" text="Câu 4" />
+            <Button fx:id="btnq3" prefHeight="31.0" prefWidth="194.0" text="Câu 3" />
+            <Button fx:id="btnq2" prefHeight="31.0" prefWidth="208.0" text="Câu 2" textFill="#6b3b3b" />
+            <Button fx:id="btnq1" prefHeight="31.0" prefWidth="224.0" style="-fx-background-color: red;" text="Câu 1" textFill="WHITE" />
         </VBox>
-    </children>
-</AnchorPane>
+    </left>
+
+    <center>
+        <AnchorPane style="-fx-background-color: #EFCDE9;">
+            <children>
+                <Button fx:id="btnA1" layoutX="73.0" layoutY="369.0" onAction="#handelBtnA" prefHeight="55.0" prefWidth="61.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 50;" text="A" />
+                <!-- Phần hiển thị câu hỏi -->
+                <Label fx:id="lblQuestion" alignment="CENTER" layoutX="6.0" layoutY="14.0" prefHeight="334.0" prefWidth="928.0" style="-fx-text-fill: black; -fx-background-color: white;" text="Lời hỏi Câu 1 ở đây">
+               <font>
+                  <Font size="32.0" />
+               </font></Label>
+                <AnchorPane />
+                <Button fx:id="btnA" layoutX="145.0" layoutY="367.0" onAction="#handelBtnA" prefHeight="59.0" prefWidth="610.0" text="Phương án A" />
+                <Button fx:id="btnB1" layoutX="73.0" layoutY="444.0" onAction="#handelBtnB" prefHeight="55.0" prefWidth="61.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 50;" text="B" />
+                <Button fx:id="btnB" layoutX="145.0" layoutY="442.0" onAction="#handelBtnB" prefHeight="59.0" prefWidth="610.0" text="Phương án B" />
+                <Button fx:id="btnC1" layoutX="73.0" layoutY="528.0" onAction="#handelBtnC" prefHeight="55.0" prefWidth="61.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 50;" text="C" />
+                <Button fx:id="btnC" layoutX="145.0" layoutY="526.0" onAction="#handelBtnC" prefHeight="59.0" prefWidth="610.0" text="Phương án C" />
+                <Button fx:id="btnD1" layoutX="73.0" layoutY="611.0" onAction="#handelBtnD" prefHeight="55.0" prefWidth="61.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 50;" text="D" />
+                <Button fx:id="btnD" layoutX="145.0" layoutY="609.0" onAction="#handelBtnD" prefHeight="59.0" prefWidth="610.0" text="Phương án D" />
+            </children>
+        </AnchorPane>
+    </center>
+
+    <!-- Phần điểm ở góc -->
+    <right>
+        <AnchorPane prefHeight="731.0" prefWidth="79.0" style="-fx-background-color: #EFCDE9;">
+            <children>
+                <Label layoutX="20.0" layoutY="611.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Điểm" textFill="#fffefe" />
+                <Label fx:id="lblScore" alignment="TOP_CENTER" layoutX="16.0" layoutY="646.0" prefHeight="35.0" prefWidth="53.0" style="-fx-font-size: 24; -fx-border-color: black; -fx-border-width: 2; -fx-padding: 10;" text="0" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

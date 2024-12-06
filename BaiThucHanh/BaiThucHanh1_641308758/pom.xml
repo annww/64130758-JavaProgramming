@@ -65,7 +65,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                daihocnhatrang.duongthianhhong.baithuchanh1_641308758/th.duongthianhhong.baithuchanh1_641308758.HelloApplication
+                                daihocnhatrang.duongthianhhong.baithuchanh1_641308758/th.duongthianhhong.SimpleMath.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

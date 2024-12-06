@@ -1,4 +1,4 @@
-package th.duongthianhhong.baithuchanh1_641308758;
+package th.duongthianhhong.SimpleMath;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

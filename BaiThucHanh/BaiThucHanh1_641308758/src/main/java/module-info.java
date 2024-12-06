@@ -4,6 +4,6 @@ module daihocnhatrang.duongthianhhong.baithuchanh1_641308758 {
 
   requires org.kordamp.bootstrapfx.core;
 
-  opens th.duongthianhhong.baithuchanh1_641308758 to javafx.fxml;
-  exports th.duongthianhhong.baithuchanh1_641308758;
+  opens th.duongthianhhong.SimpleMath to javafx.fxml;
+  exports th.duongthianhhong.SimpleMath;
 }

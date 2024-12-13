@@ -8,10 +8,10 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class TuDienApplication extends Application {
+public class DictionaryApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(TuDienApplication.class.getResource("tudien.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(DictionaryApplication.class.getResource("dictionary.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);

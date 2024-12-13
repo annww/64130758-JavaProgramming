@@ -1,3 +1,11 @@
 apple,ˈæp.l̩,Quả táo,I ate an apple for breakfast.
+computer,kəmˈpjuː.tər,Máy tính,I use my computer to work from home.
+school,skuːl,Trường học,The children go to school every morning.
+car,kɑːr,Xe hơi,I drive my car to work every day.
+book,bʊk,Sách,She is reading a book in the library.
+coffee,ˈkɒf.i, Cà phê,She drinks coffee every morning before work.
+cat,kæt,Con mèo,I have a cat that loves to nap on the couch.
+friend,frɛnd,Bạn,He is my best friend and we play soccer together.
 dog,dɒɡ,Con chó,My dog loves to play fetch in the park.
+house,haʊs,Ngôi nhà,We live in a small house near the beach.
 table,ˈteɪ.bəl,Cái bàn,Please put the books on the table.

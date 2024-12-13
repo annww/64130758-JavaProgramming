@@ -2,6 +2,7 @@ package th.duongthianhhong.th_bai5_simpledict;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.io.*;
@@ -21,7 +22,7 @@ public class DictionaryController {
     @FXML
     private Button find;
     @FXML
-    private TextField ex;
+    private TextArea ex;
     @FXML
     private Button addWordButton;
 
